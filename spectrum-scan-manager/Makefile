@@ -25,14 +25,10 @@ define Package/$(PKG_NAME)/description
 endef
 
 define Build/Test
-	cd tests;
-	for file in `ls`; do
-		lua $file -v;
-	done
+	./runtests.sh
 endef
 
 define Build/Compile
-	$(call Build/Compile/Default)
 	$(call Build/Test)
 endef
 
