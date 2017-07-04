@@ -2,10 +2,6 @@ luaunit = require('luaunit')
 manager = assert(loadfile("../files/sbin/spectrum_scan_manager.lua"))
 
 TestRemoveDefaultWifi = {
-    setUp = function()
-    end,
-    tearDown = function()
-    end
 }
 
 function TestRemoveDefaultWifi.test_default()
