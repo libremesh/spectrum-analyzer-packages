@@ -1,0 +1,16 @@
+Implementation of PAWS on Openwrt
+Information Networks Lab, Department of Electrical Engineering, 
+Indian Institute of Technology Bombay.
+Authors: Gaurang Naik and Soumik Ghosh.
+
+- The scripts assume you are using Mikrotik RouterBoard 433AH (This is relevant for the wireless interface.
+If you are using any other version of Mikrotik RouterBoard, change the wireless interface name from wlan0 
+to wlanx (x is the wireless interface name in your Mikrotik RouterBoard) in all the script files (files with
+extension .sh) 
+- Complete the initial setup by executing the file install.sh (./install.sh master OR ./install.sh slave)
+- Reboot the system
+- Access the PAWS configuration page from the broswer (http://xxx.xxx.xxx.xxx/PAWS.php)
+  Here, xxx.xxx.xxx.xxx is your RouterBoard's IP Address.
+- Sample PAWS Server IP Address can be obtained from "www.ee.iitb.ac.in/tvws/PAWS_server_ip.txt"
+- Enter your Latitude and Longitude (The PAWS Server assumes you are in India. For coordinates of any other 
+location, the PAWS Server will force disable the Wireless interface of your RouterBoard)

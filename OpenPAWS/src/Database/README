@@ -1,0 +1,7 @@
+Execute following commands for database setup from csv file.
+Database.csv file must be downloaded from 
+http://www.ee.iitb.ac.in/iwsd/PAWS_Database/Database.csv
+
+>>mysql -u root -p
+>>use database testdatabase;
+>>LOAD DATA INFILE '/var/lib/mysql/DATABASE.csv' INTO TABLE tvws FIELDS TERMINATED BY ',' ESCAPED BY '\\' LINES TERMINATED BY '\n' (LATTITUDE, LONGITUDE, FREQUENCY);
