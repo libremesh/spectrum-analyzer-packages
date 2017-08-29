@@ -1,5 +1,4 @@
 #!/bin/bash
-cd tests
-for f in `ls`; do
-    lua $f -v
+for f in `ls tests`; do
+    lua tests/$f -v
 done
